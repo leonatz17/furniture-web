@@ -32,7 +32,7 @@ export default{
             </div>
             <div class="absolute inset-9 flex flex-col md:flex-row items-center justify-between">
                 <div class="md:w-1/2 mb-4 md:mb-0">
-                    <h1 class="text-white font-['Poppins'] font-bold text-4xl md:text-5xl leading-tight mb-2">Rest like
+                    <h1 class="text-white font-['Poppins'] font-extrabold text-5xl md:text-5xl leading-tight mb-2">Rest like
                         Royalty.</h1>
                     <p class="font-regular text-xl mb-8 mt-4 text-white font-['Poppins']">Luxury Furniture, Curated for the Filipino Home
                     </p>
