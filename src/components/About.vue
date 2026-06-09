@@ -12,17 +12,10 @@
                     <h2 class="text-3xl font-bold text-amber-950 mb-8 text-center font-['Poppins'] ">About Us</h2>
                     <p
                         class="mt-4 text-amber-950 text-lg border-2 border-[#c09858] font-['Poppins'] p-2 shadow-lg/30  rounded-lg ">
-                        Bappa flour mill provides our customers with the highest quality products and services. We offer
-                        a
-                        wide variety of flours and spices to choose from, and we are always happy to help our customers
-                        find
-                        the perfect products for their needs.
-                        We are committed to providing our customers with the best possible experience. We offer
-                        competitive
-                        prices, fast shipping, and excellent customer service. We are also happy to answer any questions
-                        that our customers may have about our products or services.
-                        If you are looking for a flour and spices service business that can provide you with the highest
-                        quality products and services, then we are the company for you. We look forward to serving you!
+                        At HomeLoom, we turn houses into sanctuaries. We specialize in curating high-quality, 
+                        luxury furniture that blends timeless elegance with modern functionality to help you
+                         "Rest like Royalty." Whether you're furnishing a new home or refreshing a favorite space, 
+                         we are dedicated to bringing comfort, style, and superior craftsmanship to your doorstep.
                     </p>
                 </div>
                 <div class="mt-12 md:mt-0">
@@ -41,14 +34,13 @@
                 <div class="p-4 md:w-1/4 sm:w-1/2">
                     <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
                         <div class="flex justify-center">
-                            <svg class="w-25 h-25 text-[#c09858]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M9.5 11.5 11 13l4-3.5M12 20a16.405 16.405 0 0 1-5.092-5.804A16.694 16.694 0 0 1 5 6.666L12 4l7 2.667a16.695 16.695 0 0 1-1.908 7.529A16.406 16.406 0 0 1 12 20Z" />
+                            <svg class="w-25 h-25 text-[#c09858]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M11 9a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/>
+                            <path fill-rule="evenodd" d="M9.896 3.051a2.681 2.681 0 0 1 4.208 0c.147.186.38.282.615.255a2.681 2.681 0 0 1 2.976 2.975.681.681 0 0 0 .254.615 2.681 2.681 0 0 1 0 4.208.682.682 0 0 0-.254.615 2.681 2.681 0 0 1-2.976 2.976.681.681 0 0 0-.615.254 2.682 2.682 0 0 1-4.208 0 .681.681 0 0 0-.614-.255 2.681 2.681 0 0 1-2.976-2.975.681.681 0 0 0-.255-.615 2.681 2.681 0 0 1 0-4.208.681.681 0 0 0 .255-.615 2.681 2.681 0 0 1 2.976-2.975.681.681 0 0 0 .614-.255ZM12 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" clip-rule="evenodd"/>
+                            <path d="M5.395 15.055 4.07 19a1 1 0 0 0 1.264 1.267l1.95-.65 1.144 1.707A1 1 0 0 0 10.2 21.1l1.12-3.18a4.641 4.641 0 0 1-2.515-1.208 4.667 4.667 0 0 1-3.411-1.656Zm7.269 2.867 1.12 3.177a1 1 0 0 0 1.773.224l1.144-1.707 1.95.65A1 1 0 0 0 19.915 19l-1.32-3.93a4.667 4.667 0 0 1-3.4 1.642 4.643 4.643 0 0 1-2.53 1.21Z"/>
                             </svg>
                         </div>
-                        <h2 class="title-font font-regular text-2xl text-gray-900">Quality Products</h2>
+                        <h2 class="title-font font-regular text-2xl text-gray-900 font-['Poppins']">Curated Excellence</h2>
                     </div>
                 </div>
 
@@ -63,7 +55,7 @@
                             </svg>
 
                         </div>
-                        <h2 class="title-font font-regular text-2xl text-gray-900">Reasonable Rates</h2>
+                        <h2 class="title-font font-regular text-2xl text-gray-900 font-['Poppins']">Accessible Luxury</h2>
                     </div>
                 </div>
 
@@ -79,17 +71,19 @@
                             </svg>
 
                         </div>
-                        <h2 class="title-font font-regular text-2xl text-gray-900">Fast Delivery</h2>
+                        <h2 class="title-font font-regular text-2xl text-gray-900 font-['Poppins']">Seamless Experience</h2>
                     </div>
                 </div>
 
                 <div class="p-4 md:w-1/4 sm:w-1/2">
                     <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
                         <div class="flex justify-center">
-                            <img src="https://image3.jdomni.in/banner/13062021/EB/99/EE/8B46027500E987A5142ECC1CE1_1623567959360.png?output-format=webp"
-                                class="w-32 mb-3">
+                            <svg class="w-25 h-25 text-[#c09858]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 9a3 3 0 0 1 3-3m-2 15h4m0-3c0-4.1 4-4.9 4-9A6 6 0 1 0 6 9c0 4 4 5 4 9h4Z"/>
+</svg>
+
                         </div>
-                        <h2 class="title-font font-regular text-2xl text-gray-900">Expertise in Industry</h2>
+                        <h2 class="title-font font-regular text-2xl text-gray-900 font-['Poppins']">Design Expertise</h2>
                     </div>
                 </div>
 

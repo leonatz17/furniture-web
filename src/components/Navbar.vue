@@ -15,8 +15,8 @@ export default{
 </script>
 <template>
     <nav class="flex flex-wrap items-center justify-between p-3 bg-stone-300/90 h-30 fixed top-0 w-full px-10 z-200">
-        <div class="text-xl font-['Poppins'] hover:text-amber-950">Imperial House
-            <!-- <img class="h-15 w-15" src="https://cdn.vectorstock.com/i/500p/42/90/greek-column-icon-vector-47134290.jpg" alt=""> -->
+        <div class="text-xl font-['Poppins'] hover:text-amber-950">
+            <img class="h-15 w-30" src="../assets/images/homeloom.png" alt="">
         </div>
         <div class="flex md:hidden">
             <button id="hamburger">
