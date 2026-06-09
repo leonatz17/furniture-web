@@ -49,7 +49,7 @@ export default{
             <div class="container mx-auto px-3">
                 <h2 class="text-3xl font-bold text-[#c09858] mb-8 text-center font-['Poppins']">Our Collection</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300" @click="sofaProduct">
+                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer" @click="sofaProduct">
                         <img src="https://m.media-amazon.com/images/I/91GILvhd-rL._AC_UF894,1000_QL80_.jpg"
                             alt="wheat flour grinding" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
@@ -65,21 +65,21 @@ export default{
 
                         </div>
                     </div>
-                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300">
+                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer">
                         <img src="https://assets.sohohome.com/cdn-cgi/image/fit=crop%2Cformat=auto%2Cquality=75%2Cwidth=1100%2Cheight=1222%2Ctrim=388%3B0%3B389%3B0/images/original/271871-78124283-hoverjpg.jpg"
                             alt="Coffee" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
                             <h3 class="text-xl font-medium text-amber-950 mb-2 ">Chairs Collection</h3>
                         </div>
                     </div>
-                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300">
+                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer">
                         <img src="https://www.nitori.com.ph/cdn/shop/files/4714424-471752001_415x415.jpg?v=1709949604g"
                             alt="Coffee" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
                             <h3 class="text-xl font-medium text-amber-950 mb-2 ">Kitchen Furniture Collection</h3>
                         </div>
                     </div>
-                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300">
+                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer">
                         <img src="https://ouchcart.com/cdn/shop/files/Berne_Upholstered_Bed_Frame_37275ae1-c586-4335-81ee-2e85927ac1e8.webp?v=1721393639&width=800"
                             alt="Coffee" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
@@ -87,7 +87,7 @@ export default{
                         </div>
 
                     </div>
-                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300">
+                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer">
                         <img src="https://mandauefoam.ph/cdn/shop/files/PHOTO_2_LIFESTYLE_1_e744151f-ac67-4fd0-91e0-51c45622dcc0.jpg?v=1776483003&width=2048"
                             alt="Coffee" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
