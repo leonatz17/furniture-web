@@ -141,10 +141,10 @@ export default {
                             </path>
                         </svg>
                     </div>
-                    <h1 class="text-3xl my-5">{{ sofas.name }}</h1>
+                    <h1 class="text-xl font-bold text-amber-950 font-['Poppins'] my-3">{{ sofas.name }}</h1>
                     
-                    <h2 class="font-semibold mb-5">{{ sofas.price }}</h2>
-                    <button class="p-2 px-6 bg-purple-500 text-white rounded-md hover:bg-purple-600">Add To
+                    <h2 class=" text-xl font-bold text-amber-950 font-['Poppins'] my-3">{{ sofas.price }}</h2>
+                    <button class="p-2 px-6 bg-amber-800 text-white rounded-md hover:bg-[#c09858] cursor-pointer">Add To
                         Cart</button>
                 </section>
         </section>
