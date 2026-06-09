@@ -41,10 +41,9 @@
                 <div class="p-4 md:w-1/4 sm:w-1/2">
                     <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
                         <div class="flex justify-center">
-                           
-                            <svg class="w-25 h-25 text-[#c09858]" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                viewBox="0 0 24 24">
+
+                            <svg class="w-25 h-25 text-[#c09858]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2"
                                     d="M9.5 11.5 11 13l4-3.5M12 20a16.405 16.405 0 0 1-5.092-5.804A16.694 16.694 0 0 1 5 6.666L12 4l7 2.667a16.695 16.695 0 0 1-1.908 7.529A16.406 16.406 0 0 1 12 20Z" />
@@ -59,33 +58,38 @@
                 <div class="p-4 md:w-1/4 sm:w-1/2">
                     <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
                         <div class="flex justify-center">
-                            <img src="https://image2.jdomni.in/banner/13062021/3E/57/E8/1D6E23DD7E12571705CAC761E7_1623567977295.png?output-format=webp"
-                                class="w-32 mb-3">
-                        </div>
-                        <h2 class="title-font font-regular text-2xl text-gray-900">Reasonable Rates</h2>
-                    </div>
-                </div>
+                            <svg class="w-25 h-25 text-[#c09858]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M8.891 15.107 15.11 8.89m-5.183-.52h.01m3.089 7.254h.01M14.08 3.902a2.849 2.849 0 0 0 2.176.902 2.845 2.845 0 0 1 2.94 2.94 2.849 2.849 0 0 0 .901 2.176 2.847 2.847 0 0 1 0 4.16 2.848 2.848 0 0 0-.901 2.175 2.843 2.843 0 0 1-2.94 2.94 2.848 2.848 0 0 0-2.176.902 2.847 2.847 0 0 1-4.16 0 2.85 2.85 0 0 0-2.176-.902 2.845 2.845 0 0 1-2.94-2.94 2.848 2.848 0 0 0-.901-2.176 2.848 2.848 0 0 1 0-4.16 2.849 2.849 0 0 0 .901-2.176 2.845 2.845 0 0 1 2.941-2.94 2.849 2.849 0 0 0 2.176-.901 2.847 2.847 0 0 1 4.159 0Z" />
+                            </svg>
 
-                <div class="p-4 md:w-1/4 sm:w-1/2">
-                    <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
-                        <div class="flex justify-center">
-                            <img src="https://image3.jdomni.in/banner/13062021/16/7E/7E/5A9920439E52EF309F27B43EEB_1623568010437.png?output-format=webp"
-                                class="w-32 mb-3">
+                            <h2 class="title-font font-regular text-2xl text-gray-900">Reasonable Rates</h2>
                         </div>
-                        <h2 class="title-font font-regular text-2xl text-gray-900">Time Efficiency</h2>
                     </div>
-                </div>
 
-                <div class="p-4 md:w-1/4 sm:w-1/2">
-                    <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
-                        <div class="flex justify-center">
-                            <img src="https://image3.jdomni.in/banner/13062021/EB/99/EE/8B46027500E987A5142ECC1CE1_1623567959360.png?output-format=webp"
-                                class="w-32 mb-3">
+                    <div class="p-4 md:w-1/4 sm:w-1/2">
+                        <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
+                            <div class="flex justify-center">
+                                <img src="https://image3.jdomni.in/banner/13062021/16/7E/7E/5A9920439E52EF309F27B43EEB_1623568010437.png?output-format=webp"
+                                    class="w-32 mb-3">
+                            </div>
+                            <h2 class="title-font font-regular text-2xl text-gray-900">Time Efficiency</h2>
                         </div>
-                        <h2 class="title-font font-regular text-2xl text-gray-900">Expertise in Industry</h2>
                     </div>
-                </div>
 
+                    <div class="p-4 md:w-1/4 sm:w-1/2">
+                        <div class="px-4 py-6 transform transition duration-500 hover:scale-110">
+                            <div class="flex justify-center">
+                                <img src="https://image3.jdomni.in/banner/13062021/EB/99/EE/8B46027500E987A5142ECC1CE1_1623567959360.png?output-format=webp"
+                                    class="w-32 mb-3">
+                            </div>
+                            <h2 class="title-font font-regular text-2xl text-gray-900">Expertise in Industry</h2>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
