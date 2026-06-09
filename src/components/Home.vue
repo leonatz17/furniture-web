@@ -14,7 +14,8 @@ export default{
         sofaProduct(){
             this.sofaproduct = true;
             this.Homepage = false;
-        }
+        },
+        
     }
 }
 </script>
@@ -48,11 +49,11 @@ export default{
             <div class="container mx-auto px-3">
                 <h2 class="text-3xl font-bold text-[#c09858] mb-8 text-center font-['Poppins']">Our Collection</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300" >
+                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300" @click="sofaProduct">
                         <img src="https://m.media-amazon.com/images/I/91GILvhd-rL._AC_UF894,1000_QL80_.jpg"
                             alt="wheat flour grinding" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
-                            <h3 class="text-xl font-bold text-amber-950 mb-2 font-['Poppins']" @click="sofaProduct">Sofa Collection</h3>
+                            <h3 class="text-xl font-bold text-amber-950 mb-2 font-['Poppins']" >Sofa Collection</h3>
 
                         </div>
                     </div>

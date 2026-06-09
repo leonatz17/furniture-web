@@ -87,7 +87,14 @@ export default {
                     name: 'Settee',
                     description: 'Elegant and slim-profile seating that fits any corner.'
                 },
-            ]
+            ],
+            currentIndex:0
+        }
+
+    },
+    methods:{
+        buySofa(index){
+            this.currentIndex = index;
         }
     }
 }
@@ -99,9 +106,9 @@ export default {
             </div>
             <section
                 class="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 items-start ">
-                <section
-                    class="p-5 py-10 bg-purple-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer">
-                    <img src="https://www.dropbox.com/s/mlor33hzk73rh0c/x14423.png?dl=1" alt="">
+                <section v-for="(sofas,index) in sofa"
+                    class="p-5 py-10  text-center transform duration-500 hover:-translate-y-2 cursor-pointer hover:bg-stone-300">
+                    <img class="w-full h-60" :src="sofas.img" alt="">
                     <div class="space-x-1 flex justify-center mt-10">
                         <svg class="w-4 h-4 mx-px fill-current text-orange-600" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 14 14">
@@ -134,9 +141,9 @@ export default {
                             </path>
                         </svg>
                     </div>
-                    <h1 class="text-3xl my-5">Soft Plushy Cushion Chair</h1>
-                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, incidunt!</p>
-                    <h2 class="font-semibold mb-5">$29.99</h2>
+                    <h1 class="text-3xl my-5">{{ sofas.name }}</h1>
+                    
+                    <h2 class="font-semibold mb-5">{{ sofas.price }}</h2>
                     <button class="p-2 px-6 bg-purple-500 text-white rounded-md hover:bg-purple-600">Add To
                         Cart</button>
                 </section>
