@@ -57,11 +57,11 @@ export default{
 
                         </div>
                     </div>
-                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300">
+                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer">
                         <img src="https://cdn.thewirecutter.com/wp-content/media/2026/03/BEST-COFFEE-TABLES-SUB-02025-1.jpg?width=2048&quality=60&crop=2048:1365&auto=webp"
                             alt="Coffee" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
-                            <h3 class="text-xl font-medium text-amber-950 mb-2">Table's</h3>
+                            <h3 class="text-xl font-medium text-amber-950 mb-2">Table Collection</h3>
 
                         </div>
                     </div>
