@@ -1,5 +1,18 @@
 <script>
 
+export default{
+    components:{
+        
+    },
+    data (){
+        return{
+
+        }
+    },
+    methods:{
+
+    }
+}
 </script>
 
 <template>
@@ -82,4 +95,5 @@
 
         </section>
     </div>
+    
 </template>
