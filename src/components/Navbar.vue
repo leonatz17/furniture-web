@@ -62,11 +62,6 @@ export default{
                     Call now
                 </div>
             </div>
-
-
         </div>
-
-
-
     </nav>
 </template>
