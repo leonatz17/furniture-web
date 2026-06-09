@@ -18,13 +18,9 @@ export default{
                 <!-- Company Info -->
                 <div class="space-y-4">
                     <div class="flex items-center">
-                        <svg class="h-8 w-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                        </svg>
-                        <span class="ml-2 text-xl font-bold font-['Poppins'] text-amber-950">Imperial House</span>
+                       <img class="h-25 w-50 object-cover object-center" src="../assets/images/home.png" alt="">
                     </div>
-                    <p class="font-['Poppins'] text-amber-950">Your Trusted Partner for Home & Office Furniture</p>
+                    <p class="font-['Poppins'] text-amber-950">Weaving comfort, style, and luxury into every corner of your sanctuary.</p>
                     <div class="flex space-x-4">
                         <a href="#" class="font-['Poppins'] text-amber-950 hover:text-[#c09858] transition">
                             <span class="sr-only">Facebook</span>
