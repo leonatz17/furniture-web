@@ -14,7 +14,7 @@ export default{
 }
 </script>
 <template>
-    <nav class="flex flex-wrap items-center justify-between p-3 bg-stone-300/90 h-30 fixed top-0 w-full px-10 z-200">
+    <nav class="flex flex-wrap items-center justify-between p-3 bg-stone-300/90 h-30 fixed top-0 w-full px-10 z-1000">
         <div class="text-xl font-['Poppins'] hover:text-amber-950">
             <img class="h-30 w-50 object-cover" src="../assets/images/home.png" alt="">
         </div>
@@ -32,7 +32,7 @@ export default{
 
             <h1 class="block md:inline-block hover:text-amber-950 px-3 py-3 md:border-none text-xl" @click="navigate('About')">About us
             </h1>
-            <h1 class="block md:inline-block hover:text-amber-950 px-3 py-3 md:border-none text-xl" @click="navigate('Colect')">Our Collection
+            <h1 class="block md:inline-block hover:text-amber-950 px-3 py-3 md:border-none text-xl" @click="navigate('Collect')">Our Collection
             </h1>
             <h1 class="block md:inline-block hover:text-amber-950 px-3 py-3 md:border-none text-xl" @click="navigate('Visit')">Visit Us
             </h1>

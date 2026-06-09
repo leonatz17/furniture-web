@@ -109,7 +109,7 @@ export default {
             </div>
             <section
                 class="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 items-start ">
-                <section v-for="(sofas, index) in sofa"
+                <section v-for="(sofas, index) in sofa" :key="sofas.id"
                     class="p-5 py-10  text-center transform duration-500 hover:-translate-y-2 cursor-pointer hover:bg-stone-300">
                     <img class="w-full h-60" :src="sofas.img" alt="">
                     <div class="space-x-1 flex justify-center mt-10">
