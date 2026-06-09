@@ -6,19 +6,21 @@ export default{
     },
     data (){
         return{
-            sofaproduct:false
+            sofaproduct:false,
+            Homepage : true,
         }
     },
     methods:{
         sofaProduct(){
             this.sofaproduct = true;
+            this.Homepage = false;
         }
     }
 }
 </script>
 
 <template>
-    <div class="bg-stone-600/90">
+    <div v-if="Homepage" class="bg-stone-600/90">
         <div class="w-full h-30">
         </div>
         <div class="relative w-full h-[320px]" id="home">
@@ -50,7 +52,7 @@ export default{
                         <img src="https://m.media-amazon.com/images/I/91GILvhd-rL._AC_UF894,1000_QL80_.jpg"
                             alt="wheat flour grinding" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
-                            <h3 class="text-xl font-bold text-amber-950 mb-2 font-['Poppins']" @click="sofaProduct">Sofa's</h3>
+                            <h3 class="text-xl font-bold text-amber-950 mb-2 font-['Poppins']" @click="sofaProduct">Sofa Collection</h3>
 
                         </div>
                     </div>
@@ -66,21 +68,21 @@ export default{
                         <img src="https://assets.sohohome.com/cdn-cgi/image/fit=crop%2Cformat=auto%2Cquality=75%2Cwidth=1100%2Cheight=1222%2Ctrim=388%3B0%3B389%3B0/images/original/271871-78124283-hoverjpg.jpg"
                             alt="Coffee" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
-                            <h3 class="text-xl font-medium text-amber-950 mb-2 ">Chair's</h3>
+                            <h3 class="text-xl font-medium text-amber-950 mb-2 ">Chairs Collection</h3>
                         </div>
                     </div>
                     <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300">
                         <img src="https://www.nitori.com.ph/cdn/shop/files/4714424-471752001_415x415.jpg?v=1709949604g"
                             alt="Coffee" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
-                            <h3 class="text-xl font-medium text-amber-950 mb-2 ">Kitchen Furnitures</h3>
+                            <h3 class="text-xl font-medium text-amber-950 mb-2 ">Kitchen Furniture Collection</h3>
                         </div>
                     </div>
                     <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300">
                         <img src="https://ouchcart.com/cdn/shop/files/Berne_Upholstered_Bed_Frame_37275ae1-c586-4335-81ee-2e85927ac1e8.webp?v=1721393639&width=800"
                             alt="Coffee" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
-                            <h3 class="text-xl font-medium text-amber-950 mb-2 ">Bedroom Furniture</h3>
+                            <h3 class="text-xl font-medium text-amber-950 mb-2 ">Bedroom Furniture Collection</h3>
                         </div>
 
                     </div>
@@ -88,7 +90,7 @@ export default{
                         <img src="https://mandauefoam.ph/cdn/shop/files/PHOTO_2_LIFESTYLE_1_e744151f-ac67-4fd0-91e0-51c45622dcc0.jpg?v=1776483003&width=2048"
                             alt="Coffee" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
-                            <h3 class="text-xl font-medium text-amber-950 mb-2 ">Outdoor Furnitures</h3>
+                            <h3 class="text-xl font-medium text-amber-950 mb-2 ">Outdoor Furniture Collection</h3>
                         </div>
 
                     </div>
