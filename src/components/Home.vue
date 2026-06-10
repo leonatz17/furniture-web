@@ -11,35 +11,23 @@ export default {
             sofaproduct: false,
             Homepage: true,
             cart: [],
-            tableproducts: false,
-            tablecart:[],
-            chairproducts: false,
-            chaircart: [],
+           
+            
+            
+            
 
         }
     },
+    emits:['addCart'],
     methods: {
         sofaProduct() {
             this.sofaproduct = true;
             this.Homepage = false;
         },
-        handleCart(sofa) {
-            this.cart.push({ ...sofa })
-        },
-        // tableProductst() {
-        //     this.tableproducts = true;
-        //     this.Homepage = false;
-        // },
-        //  handleTableCart(table) {
-        //     this.tablecartcart.push({ ...table })
-        // },
-        //  handleChairCart(chairs) {
-        //     this.chaircart.push({ ...chairs })
-        // },
-        //  chairProduct() {
-        //     this.chairproducts = true;
-        //     this.Homepage = false;
-        // },
+        handleCart(product) {
+        this.$emit('addCart', product);
+    }
+        
 
     }
 }

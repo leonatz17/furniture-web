@@ -1,31 +1,32 @@
 <script>
-import Payment from './Payment.vue';
-export default{
-  components:{
-    Payment,
+
+export default {
+  components: {
+
   },
-  props:{
-    selecteditems:{
-      type:Object
+  props: {
+    selecteditems: {
+      type: Object
     }
   },
-  data (){
-    return{
+  data() {
+    return {
       itemschecked: false,
       pay: false
     }
   },
-  emits:['returntoshop', 'addCart'],
-  methods:{
-    returnShop(){
+  emits: ['returntoshop', 'productstocart'],
+  methods: {
+    returnShop() {
       this.$emit('returntoshop')
     },
-    paymentTab(){
+    paymentTab() {
       this.pay = true;
     },
     cart() {
-            this.$emit('addCart', this.selecteditems)
-        }
+      this.$emit('productstocart', this.selecteditems)
+    },
+    
   }
 }
 </script>
@@ -52,8 +53,9 @@ export default{
           <tbody>
             <tr class="text-center">
               <td class="px-2 py-2 text-left align-top">
-                <img :src="selecteditems.img " alt="photo"
-                  class="w-full mr-2 inline-block h-50 object-fill object-center" /><span class="text-amber-950 font-extrabold font-['Poppins'] text-2xl">{{ selecteditems.name }}</span>
+                <img :src="selecteditems.img" alt="photo"
+                  class="w-full mr-2 inline-block h-50 object-fill object-center" /><span
+                  class="text-amber-950 font-extrabold font-['Poppins'] text-2xl">{{ selecteditems.name }}</span>
               </td>
               <td class="px-2 py-2 text-amber-950 font-['Poppins']">{{ selecteditems.price }}.00</td>
               <td class="p-2 mt-9  rounded-[170px] border border-[#c09858] justify-around items-center flex">
@@ -61,7 +63,8 @@ export default{
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M2.33398 7.5H11.6673" stroke="#666666" stroke-width="1.5" stroke-linecap="round"
                     stroke-linejoin="round"></path>
-                </svg><span class="w-10 text-center text-amber-950 font-['Poppins'] text-base font-normal leading-normal">5</span><svg
+                </svg><span
+                  class="w-10 text-center text-amber-950 font-['Poppins'] text-base font-normal leading-normal">5</span><svg
                   class="cursor-pointer relative" width="14" height="15" viewBox="0 0 14 15" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M2.33398 7.49998H11.6673M7.00065 2.83331V12.1666V2.83331Z" stroke="#1A1A1A"
@@ -82,14 +85,15 @@ export default{
                 </svg>
               </td>
             </tr>
-            
-            
+
+
           </tbody>
           <tfoot>
             <tr class="border-t border-amber-600 ">
               <td class="px-2 py-2" colspan="3">
                 <button
-                  class="px-8 cursor-pointer py-3.5 bg-amber-800 rounded-[43px] hover:bg-[#c09858] text-sm font-semibold className leading-[16px] text-white font-['Poppins']" @click="returnShop">
+                  class="px-8 cursor-pointer py-3.5 bg-amber-800 rounded-[43px] hover:bg-[#c09858] text-sm font-semibold className leading-[16px] text-white font-['Poppins']"
+                  @click="returnShop">
                   Return to shop
                 </button>
               </td>
@@ -109,7 +113,8 @@ export default{
         </h2>
         <div class="w-[376px] py-3 justify-between items-center flex">
           <span class="text-amber-950 font-['Poppins'] text-base font-normal leading-normal">Total:</span><span
-            class="text-amber-950 font-['Poppins'] text-base font-semibold leading-tight">{{ selecteditems.price }}.00</span>
+            class="text-amber-950 font-['Poppins'] text-base font-semibold leading-tight">{{ selecteditems.price
+            }}.00</span>
         </div>
         <div class="w-[376px] py-3 shadow-[0px_1px_0px_0px_rgba(229,229,229,1.00)] justify-between items-center flex">
           <span class="text-amber-950 font-['Poppins'] text-sm font-normal leading-[21px]">Shipping:</span><span
@@ -117,10 +122,12 @@ export default{
         </div>
         <div class="w-[376px] py-3 shadow-[0px_1px_0px_0px_rgba(229,229,229,1.00)] justify-between items-center flex">
           <span class="text-amber-950 font-['Poppins'] text-sm font-normal leading-[21px]">Subtotal:</span><span
-            class="text-amber-950 font-['Poppins'] text-sm font-medium leading-[21px]">{{ selecteditems.price }}.00</span>
+            class="text-amber-950 font-['Poppins'] text-sm font-medium leading-[21px]">{{ selecteditems.price
+            }}.00</span>
         </div>
         <button
-          class="w-[376px] text-white mt-5 px-10 py-4 bg-amber-800 hover:bg-[#c09858] rounded-[44px] gap-4 text-base font-semibold leading-tight" @click="paymentTab">
+          class="w-[376px] text-white mt-5 px-10 py-4 bg-amber-800 hover:bg-[#c09858] rounded-[44px] gap-4 text-base font-semibold leading-tight"
+          @click="cart">
           Add to Cart
         </button>
       </div>
@@ -139,5 +146,5 @@ export default{
       </div>
     </div> -->
   </section>
-  <Payment v-if="pay" />
+
 </template>

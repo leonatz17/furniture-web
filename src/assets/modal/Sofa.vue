@@ -266,25 +266,30 @@ export default {
         }
     },
 
-emits: ['addCart'],
+    emits: ['addCart'],
     methods: {
-    buySofa(index) {
-        this.currentIndex = index;
-        this.items = false;
-        this.sofaItems = true
+        buySofa(index) {
+            console.log("Index received:", index);
+            console.log("Sofa array:", this.sofa);
+            console.log("Sofa at index:", this.sofa[index]);
 
-    },
-    addCart(sofa) {
-        this.$emit('addCart', { ...sofa })
-    },
-    return (){
-        this.sofaItems = true;
-    },
-        addCart(sofa) {
-        this.$emit('addCart', { ...sofa })
-        this.sofaItems = false;
+            this.currentIndex = index;
+            this.items = false;
+            this.sofaItems = true
+            console.log("Sofa selected:", this.sofa[index])
+
+        },
+        passToHome(sofa) {
+      this.$emit('addCart', {...sofa});
+            this.sofaItems = false;
+            this.items = true;
+        },
+        returnToShop() {
+            this.sofaItems = false;
+            this.items = true;
+        }
+
     }
-}
 }
 </script>
 <template>
@@ -295,7 +300,7 @@ emits: ['addCart'],
 
             <section
                 class="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 items-start "
-                @click="buySofa(index)">
+                >
                 <section v-for="(sofas, index) in sofa" :key="sofas.id"
                     class="p-5 py-10  text-center transform duration-500 hover:-translate-y-2 cursor-pointer hover:bg-stone-300">
                     <img class="w-full h-60" :src="sofas.img" alt="">
@@ -335,11 +340,11 @@ emits: ['addCart'],
 
                     <h2 class=" text-xl font-bold text-amber-950 font-['Poppins'] my-3">{{ sofas.price }}.00</h2>
                     <button class="p-2 px-6 bg-amber-800 text-white rounded-md hover:bg-[#c09858] cursor-pointer"
-                        @click="buySofa(index)">Add To
+                        @click.stop="buySofa(index)">Add To
                         Cart</button>
                 </section>
             </section>
         </section>
     </div>
-    <Cart v-if="sofaItems" :selecteditems="sofa[currentIndex]" @returntoshop="return" @productstocart="addCart" />
+    <Cart v-if="sofaItems" :selecteditems="sofa[currentIndex]" @returntoshop="return" @productstocart="passToHome" />
 </template>
