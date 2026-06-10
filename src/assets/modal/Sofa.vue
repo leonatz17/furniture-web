@@ -269,15 +269,10 @@ export default {
     emits: ['addCart'],
     methods: {
         buySofa(index) {
-            console.log("Index received:", index);
-            console.log("Sofa array:", this.sofa);
-            console.log("Sofa at index:", this.sofa[index]);
-
             this.currentIndex = index;
             this.items = false;
             this.sofaItems = true
-            console.log("Sofa selected:", this.sofa[index])
-
+            
         },
         passToHome(sofa) {
       this.$emit('addCart', {...sofa});

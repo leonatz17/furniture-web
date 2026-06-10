@@ -1,8 +1,8 @@
 <script>
 export default{
     props:{
-       cartItems :{
-            type: Object
+       cart :{
+            type: Array
         }
     }
 }
@@ -30,12 +30,12 @@ export default{
                                 <tr>
                                     <td class="py-4">
                                         <div class="flex items-center">
-                                            <img class="h-16 w-16 mr-4" :src="cartItems.img"
+                                            <img class="h-16 w-16 mr-4" :src="cart.img"
                                                 alt="Product image">
-                                            <span class="font-semibold">{{ cartItems.name }}</span>
+                                            <span class="font-semibold">{{ cart.name }}</span>
                                         </div>
                                     </td>
-                                    <td class="py-4">{{ cartItems.price }}</td>
+                                    <td class="py-4">{{ cart.price }}</td>
                                     <td class="py-4">
                                         <div class="flex items-center">
                                             <button class="border rounded-md py-2 px-4 mr-2">-</button>
@@ -43,7 +43,7 @@ export default{
                                             <button class="border rounded-md py-2 px-4 ml-2">+</button>
                                         </div>
                                     </td>
-                                    <td class="py-4">{{ cartItems.price }}</td>
+                                    <td class="py-4">{{ cart.price }}</td>
                                 </tr>
                                 <!-- More product rows -->
                             </tbody>
@@ -68,7 +68,7 @@ export default{
                         <hr class="my-2">
                         <div class="flex justify-between mb-2">
                             <span class="font-semibold">Total</span>
-                            <span class="font-semibold">{{ cartItems.price }}</span>
+                            <span class="font-semibold">{{ cart.price }}</span>
                         </div>
                         <button class="bg-blue-500 text-white py-2 px-4 rounded-lg mt-4 w-full">Checkout</button>
                     </div>

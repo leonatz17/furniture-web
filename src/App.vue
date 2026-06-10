@@ -26,14 +26,14 @@ export default {
   methods: {
     changePage(page) {
       this.currentpage = page;
-      console.log("Navigating to: ", page);
+      
     },
     addToMasterCart(sofa) {
       this.cartItems.push({...sofa});
       this.cartItems = [];
-      console.log("Successfully added to master cart:", this.cart);
       
-      console.log("Adding to master cart:", sofa);
+      
+      
 
 
     }
@@ -47,6 +47,6 @@ export default {
   <About v-if="currentpage === 'About'" />
   <Visit v-if="currentpage === 'Visit'" />
   <Collection v-if="currentpage === 'Collect'" />
-  <Insidecart v-if="currentpage === 'Cart'" :cartItems="cartItems" />
+  <Insidecart v-if="currentpage === 'Cart'" :cart="cartItems" />
   <Footer />
 </template>
