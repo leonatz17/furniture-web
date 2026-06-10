@@ -1,5 +1,9 @@
 <script>
+
 export default{
+  components:{
+    
+  },
   props:{
     selecteditems:{
       type:Object
@@ -7,7 +11,7 @@ export default{
   },
   data (){
     return{
-
+      itemschecked: false,
     }
   },
   emits:['returntoshop'],
@@ -128,4 +132,5 @@ export default{
       </div>
     </div>
   </section>
+  
 </template>

@@ -1,13 +1,13 @@
 <script>
-export default{
-    data (){
-        return{
+export default {
+    data() {
+        return {
 
         }
     },
-    emits:['switchpages'],
-    methods:{
-        navigate(page){
+    emits: ['switchpages'],
+    methods: {
+        navigate(page) {
             this.$emit('switchpages', page)
         }
     }
@@ -26,28 +26,33 @@ export default{
                     width="40" height="40" />
             </button>
         </div>
-        <div class=" toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 md:border-none cursor-pointer">
-            <h1 class="block md:inline-block hover:text-amber-950 px-3 py-3 md:border-none text-xl" @click="navigate('Home')">Home
+        <div
+            class=" toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 md:border-none cursor-pointer">
+            <h1 class="block md:inline-block hover:text-amber-950 px-3 py-3 md:border-none text-xl"
+                @click="navigate('Home')">Home
             </h1>
 
-            <h1 class="block md:inline-block hover:text-amber-950 px-3 py-3 md:border-none text-xl" @click="navigate('About')">About us
+            <h1 class="block md:inline-block hover:text-amber-950 px-3 py-3 md:border-none text-xl"
+                @click="navigate('About')">About us
             </h1>
-            <h1 class="block md:inline-block hover:text-amber-950 px-3 py-3 md:border-none text-xl" @click="navigate('Collect')">Our Collection
+            <h1 class="block md:inline-block hover:text-amber-950 px-3 py-3 md:border-none text-xl"
+                @click="navigate('Collect')">Our Collection
             </h1>
-            <h1 class="block md:inline-block hover:text-amber-950 px-3 py-3 md:border-none text-xl" @click="navigate('Visit')">Visit Us
+            <h1 class="block md:inline-block hover:text-amber-950 px-3 py-3 md:border-none text-xl"
+                @click="navigate('Visit')">Visit Us
             </h1>
         </div>
 
 
 
         <div class="toggle w-full text-end hidden md:flex md:w-auto px-2 py-2 md:rounded gap-2">
-            <div class="flex items-center h-10 w-10 rounded-md bg-[#c8a876] text-white font-medium p-2">
-                <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path fill-rule="evenodd"
-                        d="M4 4a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .979.796L7.939 6H19a1 1 0 0 1 .979 1.204l-1.25 6a1 1 0 0 1-.979.796H9.605l.208 1H17a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L5.686 5H5a1 1 0 0 1-1-1Z"
-                        clip-rule="evenodd" />
+            <div class="flex items-center h-10 w-10 rounded-md bg-[#c8a876] text-white font-medium p-2 ">
+                <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" fill="none" viewBox="0 0 24 24" @click="navigate('Cart')">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7h-1M8 7h-.688M13 5v4m-2-2h4" />
                 </svg>
+
 
             </div>
 
