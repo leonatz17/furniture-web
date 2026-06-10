@@ -4,6 +4,17 @@ export default{
     selecteditems:{
       type:Object
     }
+  },
+  data (){
+    return{
+
+    }
+  },
+  emits:['returntoshop'],
+  methods:{
+    returnShop(){
+      this.$emit('returntoshop')
+    }
   }
 }
 </script>
@@ -30,8 +41,8 @@ export default{
           <tbody>
             <tr class="text-center">
               <td class="px-2 py-2 text-left align-top">
-                <img :src="selecteditems.img" alt="test"
-                  class="w-[100px] mr-2 inline-block h-[100px]" /><span class="text-amber-950 font-['Poppins'] text-xl">{{ selecteditems.name }}</span>
+                <img :src="selecteditems.img " alt="photo"
+                  class="w-[150px] mr-2 inline-block h-[120px]" /><span class="text-amber-950 font-['Poppins'] text-xl">{{ selecteditems.name }}</span>
               </td>
               <td class="px-2 py-2 text-amber-950 font-['Poppins']">{{ selecteditems.price }}.00</td>
               <td class="p-2 mt-9  rounded-[170px] border border-[#c09858] justify-around items-center flex">
@@ -67,7 +78,7 @@ export default{
             <tr class="border-t border-amber-600 ">
               <td class="px-2 py-2" colspan="3">
                 <button
-                  class="px-8 cursor-pointer py-3.5 bg-amber-800 rounded-[43px] hover:bg-[#c09858] text-sm font-semibold className leading-[16px] text-white font-['Poppins']">
+                  class="px-8 cursor-pointer py-3.5 bg-amber-800 rounded-[43px] hover:bg-[#c09858] text-sm font-semibold className leading-[16px] text-white font-['Poppins']" @click="returnShop">
                   Return to shop
                 </button>
               </td>
