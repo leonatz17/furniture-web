@@ -1,5 +1,9 @@
 <script>
+import Cart from './Cart.vue';
 export default {
+    components: {
+        Cart
+    },
     data() {
         return {
             sofa: [
@@ -88,27 +92,39 @@ export default {
                     description: 'Elegant and slim-profile seating that fits any corner.'
                 },
             ],
-            currentIndex: 0
+            currentIndex: 0,
+            sofaItems: false,
+            items:true,
         }
 
     },
+    emits: ['addCart'],
     methods: {
         buySofa(index) {
             this.currentIndex = index;
+            this.sofaItems = true
+            this.items = false;
+        },
+        addCart(sofa) {
+            this.$emit('addCart', { ...sofa })
+            
+
+
         }
     }
 }
 </script>
 <template>
-    <div class="bg-stone-600/90">
+    <div v-if="items" class="bg-stone-600/90">
         <section class="container mx-auto p-10 md:py-12 px-0 md:p-8 md:px-0">
             <div class="h-30 w-full">
             </div>
-            <div class="h-10 w-full">
+            <div class="h-10 w-full px-10">
                 <h1 class="text-2xl font-['Poppins'] font-bold text-amber-950">> Sofa Collection</h1>
             </div>
             <section
-                class="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 items-start " @click="buySofa(index)">
+                class="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 items-start "
+                @click="buySofa(index)">
                 <section v-for="(sofas, index) in sofa" :key="sofas.id"
                     class="p-5 py-10  text-center transform duration-500 hover:-translate-y-2 cursor-pointer hover:bg-stone-300">
                     <img class="w-full h-60" :src="sofas.img" alt="">
@@ -147,10 +163,12 @@ export default {
                     <h1 class="text-xl font-bold text-amber-950 font-['Poppins'] my-3">{{ sofas.name }}</h1>
 
                     <h2 class=" text-xl font-bold text-amber-950 font-['Poppins'] my-3">{{ sofas.price }}.00</h2>
-                    <button class="p-2 px-6 bg-amber-800 text-white rounded-md hover:bg-[#c09858] cursor-pointer" @click="buySofa(index)">Add To
+                    <button class="p-2 px-6 bg-amber-800 text-white rounded-md hover:bg-[#c09858] cursor-pointer"
+                        @click="buySofa(index)">Add To
                         Cart</button>
                 </section>
             </section>
         </section>
     </div>
+    <Cart v-if="sofaItems" :selecteditems="sofa[currentIndex]"/>
 </template>

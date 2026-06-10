@@ -8,6 +8,7 @@ export default{
         return{
             sofaproduct:false,
             Homepage : true,
+            cart: [],
         }
     },
     methods:{
@@ -15,6 +16,9 @@ export default{
             this.sofaproduct = true;
             this.Homepage = false;
         },
+         handleCart(sofa) {
+      this.cart.push({ ...sofa })
+    },
         
     }
 }
@@ -99,5 +103,5 @@ export default{
             </div>
         </section>
     </div>
-    <Sofa  v-if="sofaproduct"/>
+    <Sofa  v-if="sofaproduct" @addCart="handleCart"/>
 </template>
