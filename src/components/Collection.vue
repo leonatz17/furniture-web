@@ -163,20 +163,20 @@
                         </div>
                     </div>
                     <div class="relative overflow-hidden rounded-2xl shadow-lg group">
-                        <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxmb290YmFsbHxlbnwwfDB8fHwxNzIxMDQzMjExfDA&ixlib=rb-4.0.3&q=80&w=1080"
+                        <img src="https://images.unsplash.com/photo-1600210492090-a159ffa3aeaf?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="Sport" class="w-full h-48 object-cover">
                         <div
-                            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            class="absolute inset-0 bg-stone-300/50 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div class="absolute bottom-0 left-0 right-0 p-4">
                                 <h4 class="text-xl font-bold text-white">Football</h4>
                             </div>
                         </div>
                     </div>
                     <div class="relative overflow-hidden rounded-2xl shadow-lg group">
-                        <img src="https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw3fHxjcmlja2V0fGVufDB8MHx8fDE3MjEwNDMxNTh8MA&ixlib=rb-4.0.3&q=80&w=1080"
+                        <img src="https://plus.unsplash.com/premium_photo-1664910448640-aa6add78b461?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXNpYW4lMjBmYW1pbHklMjBlYXRpbmd8ZW58MHx8MHx8fDA%3D"
                             alt="Sport" class="w-full h-48 object-cover">
                         <div
-                            class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            class="absolute inset-0 bg-stone-300/50 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div class="absolute bottom-0 left-0 right-0 p-4">
                                 <h4 class="text-xl font-bold text-white">Cricket</h4>
                             </div>

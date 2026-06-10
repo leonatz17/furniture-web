@@ -327,7 +327,7 @@ export default {
                             </path>
                         </svg>
                     </div>
-                    <h1 class="text-xl font-bold text-amber-950 font-['Poppins'] my-3">{{ sofas.name }}</h1>
+                    <h1 class="text-2xl font-extrabold text-amber-950 font-['Poppins'] my-4">{{ sofas.name }}</h1>
 
                     <h2 class=" text-xl font-bold text-amber-950 font-['Poppins'] my-3">{{ sofas.price }}.00</h2>
                     <button class="p-2 px-6 bg-amber-800 text-white rounded-md hover:bg-[#c09858] cursor-pointer"
@@ -337,5 +337,5 @@ export default {
             </section>
         </section>
     </div>
-    <Cart v-if="sofaItems" :selecteditems="sofa[currentIndex]" @returntoshop="return"/>
+    <Cart v-if="sofaItems" :selecteditems="sofa[currentIndex]" @returntoshop="return" @addCart=""/>
 </template>

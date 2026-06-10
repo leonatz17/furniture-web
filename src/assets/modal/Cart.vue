@@ -15,14 +15,17 @@ export default{
       pay: false
     }
   },
-  emits:['returntoshop'],
+  emits:['returntoshop', 'addCart'],
   methods:{
     returnShop(){
       this.$emit('returntoshop')
     },
     paymentTab(){
       this.pay = true;
-    }
+    },
+    cart() {
+            this.$emit('addCart', this.selecteditems)
+        }
   }
 }
 </script>
@@ -50,7 +53,7 @@ export default{
             <tr class="text-center">
               <td class="px-2 py-2 text-left align-top">
                 <img :src="selecteditems.img " alt="photo"
-                  class="w-full mr-2 inline-block h-50 object-fill object-center" /><span class="text-amber-950 font-['Poppins'] text-xl">{{ selecteditems.name }}</span>
+                  class="w-full mr-2 inline-block h-50 object-fill object-center" /><span class="text-amber-950 font-extrabold font-['Poppins'] text-2xl">{{ selecteditems.name }}</span>
               </td>
               <td class="px-2 py-2 text-amber-950 font-['Poppins']">{{ selecteditems.price }}.00</td>
               <td class="p-2 mt-9  rounded-[170px] border border-[#c09858] justify-around items-center flex">
@@ -118,7 +121,7 @@ export default{
         </div>
         <button
           class="w-[376px] text-white mt-5 px-10 py-4 bg-amber-800 hover:bg-[#c09858] rounded-[44px] gap-4 text-base font-semibold leading-tight" @click="paymentTab">
-          Proceed to checkout
+          Add to Cart
         </button>
       </div>
     </div>
