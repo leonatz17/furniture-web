@@ -1,6 +1,9 @@
 <script>
-
+import Chaircart from './Chaircart.vue';
 export default{
+    components:{
+        Chaircart
+    },
     data (){
         return{
              chairs: [
@@ -89,12 +92,26 @@ export default{
                     description: 'Elegant and slim-profile seating that fits any corner.'
                 },
             ],
+            chairproducts:false,
+            chairitems : true,
+            currentIndex: 0
         }
+    },
+    methods:{
+        buyChairs(index){
+            this.currentIndex = index;
+            this.chairproducts = true;
+            this.chairitems = false
+
+        },
+        addCart(chairs) {
+            this.$emit('addtableCart', { ...chairs })
+        },
     }
 }
 </script>
 <template>
-    <div  class="bg-stone-600/90">
+    <div v-if="chairitems" class="bg-stone-600/90">
         <section class="container mx-auto p-10 md:py-12 px-0 md:p-8 md:px-0">
             <div class="h-30 w-full">
             </div>
@@ -104,8 +121,8 @@ export default{
             <section
                 class="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 items-start "
                 >
-                <section v-for="(chair,index) in chairs"
-                    class="p-5 py-10  text-center transform duration-500 hover:-translate-y-2 cursor-pointer hover:bg-stone-300" @click="buyTable(index)">
+                <section v-for="(chair,index) in chairs" :key="chair.id"
+                    class="p-5 py-10  text-center transform duration-500 hover:-translate-y-2 cursor-pointer hover:bg-stone-300" @click="buyChairs(index)">
                     <img class="w-full h-60" :src="chair.img" alt="">
                     <div class="space-x-1 flex justify-center mt-10">
                         <svg class="w-4 h-4 mx-px fill-current text-orange-600" xmlns="http://www.w3.org/2000/svg"
@@ -143,10 +160,11 @@ export default{
 
                     <h2 class=" text-xl font-bold text-amber-950 font-['Poppins'] my-3">{{ chair.price }}.00</h2>
                     <button class="p-2 px-6 bg-amber-800 text-white rounded-md hover:bg-[#c09858] cursor-pointer"
-                        >Add To
+                        @click="buyChairs(index)">Add To
                         Cart</button>
                 </section>
             </section>
         </section>
     </div>
+    <Chaircart v-if="chairproducts" :selectedChairitems="chairs[currentIndex]" />
 </template>

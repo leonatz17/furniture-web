@@ -1,10 +1,12 @@
 <script>
 import Sofa from '../assets/modal/Sofa.vue';
 import Table from '../assets/modal/Table.vue';
+import Chairs from '../assets/modal/Chairs.vue';
 export default {
     components: {
         Sofa,
-        Table
+        Table,
+        Chairs
     },
     data() {
         return {
@@ -13,6 +15,8 @@ export default {
             cart: [],
             tableproducts: false,
             tablecart:[],
+            chairproducts: false,
+            chaircart: [],
 
         }
     },
@@ -30,6 +34,10 @@ export default {
         },
          handleTableCart(table) {
             this.tablecartcart.push({ ...table })
+        },
+         handleChairCart(chairs) {
+            this.chaircart.push({ ...chairs })
+
         },
 
     }
@@ -122,4 +130,5 @@ export default {
     </div>
     <Sofa v-if="sofaproduct" @addCart="handleCart" />
     <Table v-if="tableproducts" @addtableCart="handleTableCart" />
+    <Chairs v-if="chairproducts" @addtableCart="handleChairCart" />
 </template>
