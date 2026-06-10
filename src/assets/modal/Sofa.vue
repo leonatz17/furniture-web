@@ -262,25 +262,29 @@ export default {
             ],
             currentIndex: 0,
             sofaItems: false,
-            items:true,
+            items: true,
         }
+    },
+
+emits: ['addCart'],
+    methods: {
+    buySofa(index) {
+        this.currentIndex = index;
+        this.items = false;
+        this.sofaItems = true
 
     },
-    emits: ['addCart'],
-    methods: {
-        buySofa(index) {
-            this.currentIndex = index;
-           this.items = false;
-            this.sofaItems = true
-            
-        },
+    addCart(sofa) {
+        this.$emit('addCart', { ...sofa })
+    },
+    return (){
+        this.sofaItems = true;
+    },
         addCart(sofa) {
-            this.$emit('addCart', { ...sofa })
-        },
-        return(){
-            this.sofaItems = true;
-        }
+        this.$emit('addCart', { ...sofa })
+        this.sofaItems = false;
     }
+}
 }
 </script>
 <template>
@@ -288,7 +292,7 @@ export default {
         <section class="container mx-auto p-10 md:py-12 px-0 md:p-8 md:px-0">
             <div class="h-30 w-full">
             </div>
-            
+
             <section
                 class="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 items-start "
                 @click="buySofa(index)">
@@ -337,5 +341,5 @@ export default {
             </section>
         </section>
     </div>
-    <Cart v-if="sofaItems" :selecteditems="sofa[currentIndex]" @returntoshop="return" @addCart=""/>
+    <Cart v-if="sofaItems" :selecteditems="sofa[currentIndex]" @returntoshop="return" @productstocart="addCart" />
 </template>

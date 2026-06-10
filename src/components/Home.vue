@@ -1,12 +1,10 @@
 <script>
 import Sofa from '../assets/modal/Sofa.vue';
-import Table from '../assets/modal/Table.vue';
-import Chairs from '../assets/modal/Chairs.vue';
+
 export default {
     components: {
         Sofa,
-        Table,
-        Chairs
+       
     },
     data() {
         return {
@@ -28,20 +26,20 @@ export default {
         handleCart(sofa) {
             this.cart.push({ ...sofa })
         },
-        tableProductst() {
-            this.tableproducts = true;
-            this.Homepage = false;
-        },
-         handleTableCart(table) {
-            this.tablecartcart.push({ ...table })
-        },
-         handleChairCart(chairs) {
-            this.chaircart.push({ ...chairs })
-        },
-         chairProduct() {
-            this.chairproducts = true;
-            this.Homepage = false;
-        },
+        // tableProductst() {
+        //     this.tableproducts = true;
+        //     this.Homepage = false;
+        // },
+        //  handleTableCart(table) {
+        //     this.tablecartcart.push({ ...table })
+        // },
+        //  handleChairCart(chairs) {
+        //     this.chaircart.push({ ...chairs })
+        // },
+        //  chairProduct() {
+        //     this.chairproducts = true;
+        //     this.Homepage = false;
+        // },
 
     }
 }
@@ -138,6 +136,5 @@ export default {
         </section>
     </div>
     <Sofa v-if="sofaproduct" @addCart="handleCart" />
-    <Table v-if="tableproducts" @addtableCart="handleTableCart" />
-    <Chairs v-if="chairproducts" @addtableCart="handleChairCart" />
+    
 </template>
