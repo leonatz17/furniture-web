@@ -107,9 +107,9 @@ export default {
         },
         addCart(sofa) {
             this.$emit('addCart', { ...sofa })
-            
-
-
+        },
+        return(){
+            this.sofaItems = true;
         }
     }
 }
@@ -170,5 +170,5 @@ export default {
             </section>
         </section>
     </div>
-    <Cart v-if="sofaItems" :selecteditems="sofa[currentIndex]"/>
+    <Cart v-if="sofaItems" :selecteditems="sofa[currentIndex]" @returntoshop="return"/>
 </template>
