@@ -1,8 +1,8 @@
 <script>
-
+import Payment from './Payment.vue';
 export default{
   components:{
-    
+    Payment,
   },
   props:{
     selecteditems:{
@@ -12,12 +12,16 @@ export default{
   data (){
     return{
       itemschecked: false,
+      pay: false
     }
   },
   emits:['returntoshop'],
   methods:{
     returnShop(){
       this.$emit('returntoshop')
+    },
+    paymentTab(){
+      this.pay = true;
     }
   }
 }
@@ -113,7 +117,7 @@ export default{
             class="text-amber-950 font-['Poppins'] text-sm font-medium leading-[21px]">{{ selecteditems.prize }}.00</span>
         </div>
         <button
-          class="w-[376px] text-white mt-5 px-10 py-4 bg-amber-800 hover:bg-[#c09858] rounded-[44px] gap-4 text-base font-semibold leading-tight">
+          class="w-[376px] text-white mt-5 px-10 py-4 bg-amber-800 hover:bg-[#c09858] rounded-[44px] gap-4 text-base font-semibold leading-tight" @click="paymentTab">
           Proceed to checkout
         </button>
       </div>
@@ -132,5 +136,5 @@ export default{
       </div>
     </div>
   </section>
-  
+  <Payment v-if="pay" />
 </template>
