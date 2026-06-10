@@ -36,7 +36,7 @@ export default {
                 @click="navigate('About')">About us
             </h1>
             <h1 class="block md:inline-block hover:text-amber-950 px-3 py-3 md:border-none text-xl"
-                @click="navigate('Collect')">Our Collection
+                @click="navigate('Collect')">Gallery
             </h1>
             <h1 class="block md:inline-block hover:text-amber-950 px-3 py-3 md:border-none text-xl"
                 @click="navigate('Visit')">Visit Us

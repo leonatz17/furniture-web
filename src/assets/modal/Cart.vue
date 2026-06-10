@@ -50,7 +50,7 @@ export default{
             <tr class="text-center">
               <td class="px-2 py-2 text-left align-top">
                 <img :src="selecteditems.img " alt="photo"
-                  class="w-[150px] mr-2 inline-block h-[120px]" /><span class="text-amber-950 font-['Poppins'] text-xl">{{ selecteditems.name }}</span>
+                  class="w-full mr-2 inline-block h-50 object-fill object-center" /><span class="text-amber-950 font-['Poppins'] text-xl">{{ selecteditems.name }}</span>
               </td>
               <td class="px-2 py-2 text-amber-950 font-['Poppins']">{{ selecteditems.price }}.00</td>
               <td class="p-2 mt-9  rounded-[170px] border border-[#c09858] justify-around items-center flex">
@@ -122,7 +122,7 @@ export default{
         </button>
       </div>
     </div>
-    <div
+    <!-- <div
       class="mt-6 p-5 w-[800px]  rounded-lg border border-amber-600 justify-start items-center gap-6 inline-flex hover:bg-stone-300">
       <h3 class="text-amber-950 font-['Poppins'] w-1/4 text-xl font-medium className leading-[30px]">
         Coupon Code
@@ -134,7 +134,7 @@ export default{
           Apply Coupon
         </button>
       </div>
-    </div>
+    </div> -->
   </section>
   <Payment v-if="pay" />
 </template>

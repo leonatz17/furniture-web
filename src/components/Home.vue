@@ -37,7 +37,10 @@ export default {
         },
          handleChairCart(chairs) {
             this.chaircart.push({ ...chairs })
-
+        },
+         chairProduct() {
+            this.chairproducts = true;
+            this.Homepage = false;
         },
 
     }
@@ -79,48 +82,54 @@ export default {
                         @click="sofaProduct">
                         <img src="https://m.media-amazon.com/images/I/91GILvhd-rL._AC_UF894,1000_QL80_.jpg"
                             alt="wheat flour grinding" class="w-full h-110 object-cover">
-                        <div class="p-6 text-center">
-                            <h3 class="text-xl font-bold text-amber-950 mb-2 font-['Poppins']">Sofa Collection</h3>
+                        <div class="p-6 text-center flex justify-between">
+                            <h3 class="text-xl font-bold text-amber-950 mb-2 font-['Poppins']" @click="sofaProduct">Sofa Collection</h3>
+                            <button class="text-lg font-bold text-white mb-2 font-['Poppins'] bg-amber-900 p-2 hover:bg-[#c09858]" @click="sofaProduct">See all Collection➜ </button>
 
                         </div>
                     </div>
                     <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer"
-                        @click="tableProductst">
+                        @click="sofaProduct">
                         <img src="https://cdn.thewirecutter.com/wp-content/media/2026/03/BEST-COFFEE-TABLES-SUB-02025-1.jpg?width=2048&quality=60&crop=2048:1365&auto=webp"
                             alt="Coffee" class="w-full h-110 object-cover">
-                        <div class="p-6 text-center">
-                            <h3 class="text-xl font-medium text-amber-950 mb-2" @click="tableProductst">Table Collection
+                        <div class="p-6 text-center flex justify-between">
+                            <h3 class="text-xl font-medium text-amber-950 mb-2" @click="sofaProduct">Table Collection
                             </h3>
+                            <button class="text-lg font-bold text-white mb-2 font-['Poppins'] bg-amber-900 p-2 hover:bg-[#c09858]" @click="sofaProduct">See all Collection➜ </button>
 
                         </div>
                     </div>
-                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer">
+                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer" @click="sofaProduct">
                         <img src="https://assets.sohohome.com/cdn-cgi/image/fit=crop%2Cformat=auto%2Cquality=75%2Cwidth=1100%2Cheight=1222%2Ctrim=388%3B0%3B389%3B0/images/original/271871-78124283-hoverjpg.jpg"
                             alt="Coffee" class="w-full h-110 object-cover">
-                        <div class="p-6 text-center">
-                            <h3 class="text-xl font-medium text-amber-950 mb-2 ">Chairs Collection</h3>
+                        <div class="p-6 text-center flex justify-between">
+                            <h3 class="text-xl font-medium text-amber-950 mb-2 " @click="sofaProduct" >Chairs Collection</h3>
+                            <button class="text-lg font-bold text-white mb-2 font-['Poppins'] bg-amber-900 p-2 hover:bg-[#c09858]" @click="sofaProduct">See all Collection➜ </button>
                         </div>
                     </div>
-                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer">
+                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer" @click="sofaProduct">
                         <img src="https://www.nitori.com.ph/cdn/shop/files/4714424-471752001_415x415.jpg?v=1709949604g"
                             alt="Coffee" class="w-full h-110 object-cover">
-                        <div class="p-6 text-center">
-                            <h3 class="text-xl font-medium text-amber-950 mb-2 ">Kitchen Furniture Collection</h3>
+                        <div class="p-6 text-center flex justify-between">
+                            <h3 class="text-xl font-medium text-amber-950 mb-2 " @click="sofaProduct">Kitchen Furniture Collection</h3>
+                            <button class="text-lg font-bold text-white mb-2 font-['Poppins'] bg-amber-900 p-2 hover:bg-[#c09858]" @click="sofaProduct">See all Collection➜ </button>
                         </div>
                     </div>
-                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer">
+                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer" @click="sofaProduct">
                         <img src="https://ouchcart.com/cdn/shop/files/Berne_Upholstered_Bed_Frame_37275ae1-c586-4335-81ee-2e85927ac1e8.webp?v=1721393639&width=800"
                             alt="Coffee" class="w-full h-110 object-cover">
-                        <div class="p-6 text-center">
-                            <h3 class="text-xl font-medium text-amber-950 mb-2 ">Bedroom Furniture Collection</h3>
+                        <div class="p-6 text-center flex justify-between">
+                            <h3 class="text-xl font-medium text-amber-950 mb-2 " @click="sofaProduct">Bedroom Furniture Collection</h3>
+                            <button class="text-lg font-bold text-white mb-2 font-['Poppins'] bg-amber-900 p-2 hover:bg-[#c09858]" @click="sofaProduct">See all Collection➜ </button>
                         </div>
 
                     </div>
-                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer">
+                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer" @click="sofaProduct">
                         <img src="https://mandauefoam.ph/cdn/shop/files/PHOTO_2_LIFESTYLE_1_e744151f-ac67-4fd0-91e0-51c45622dcc0.jpg?v=1776483003&width=2048"
                             alt="Coffee" class="w-full h-110 object-cover">
-                        <div class="p-6 text-center">
-                            <h3 class="text-xl font-medium text-amber-950 mb-2 ">Outdoor Furniture Collection</h3>
+                        <div class="p-6 text-center flex justify-between">
+                            <h3 class="text-xl font-medium text-amber-950 mb-2 " @click="sofaProduct">Outdoor Furniture Collection</h3>
+                            <button class="text-lg font-bold text-white mb-2 font-['Poppins'] bg-amber-900 p-2 hover:bg-[#c09858]" @click="sofaProduct">See all Collection➜ </button>
                         </div>
 
                     </div>
