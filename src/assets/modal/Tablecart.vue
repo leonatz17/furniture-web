@@ -87,7 +87,7 @@ export default{
         </h2>
         <div class="w-[376px] py-3 justify-between items-center flex">
           <span class="text-amber-950 font-['Poppins'] text-base font-normal leading-normal">Total:</span><span
-            class="text-amber-950 font-['Poppins'] text-base font-semibold leading-tight">price.00</span>
+            class="text-amber-950 font-['Poppins'] text-base font-semibold leading-tight">{{ selectedTableitems.price }}.00</span>
         </div>
         <div class="w-[376px] py-3 shadow-[0px_1px_0px_0px_rgba(229,229,229,1.00)] justify-between items-center flex">
           <span class="text-amber-950 font-['Poppins'] text-sm font-normal leading-[21px]">Shipping:</span><span

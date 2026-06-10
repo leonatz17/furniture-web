@@ -114,7 +114,7 @@ export default{
         </div>
         <div class="w-[376px] py-3 shadow-[0px_1px_0px_0px_rgba(229,229,229,1.00)] justify-between items-center flex">
           <span class="text-amber-950 font-['Poppins'] text-sm font-normal leading-[21px]">Subtotal:</span><span
-            class="text-amber-950 font-['Poppins'] text-sm font-medium leading-[21px]">{{ selecteditems.prize }}.00</span>
+            class="text-amber-950 font-['Poppins'] text-sm font-medium leading-[21px]">{{ selecteditems.price }}.00</span>
         </div>
         <button
           class="w-[376px] text-white mt-5 px-10 py-4 bg-amber-800 hover:bg-[#c09858] rounded-[44px] gap-4 text-base font-semibold leading-tight" @click="paymentTab">
