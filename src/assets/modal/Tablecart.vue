@@ -1,4 +1,11 @@
 <script>
+export default{
+    props:{
+        selectedTableitems:{
+            type: Object
+        }
+    }
+}
 </script>
 <template>
     <section class="w-full bg-stone-600/90 py-9 px-12">
@@ -23,10 +30,10 @@
           <tbody>
             <tr class="text-center">
               <td class="px-2 py-2 text-left align-top">
-                <img :src="selecteditems.img " alt="photo"
-                  class="w-[150px] mr-2 inline-block h-[120px]" /><span class="text-amber-950 font-['Poppins'] text-xl">{{ selecteditems.name }}</span>
+                <img :src="selectedTableitems.img " alt="photo"
+                  class="w-[150px] mr-2 inline-block h-[120px]" /><span class="text-amber-950 font-['Poppins'] text-xl">{{ selectedTableitems.name }}</span>
               </td>
-              <td class="px-2 py-2 text-amber-950 font-['Poppins']">{{ selecteditems.price }}.00</td>
+              <td class="px-2 py-2 text-amber-950 font-['Poppins']">{{ selectedTableitems.price }}.00</td>
               <td class="p-2 mt-9  rounded-[170px] border border-[#c09858] justify-around items-center flex">
                 <svg width="14" height="15" class="cursor-pointer" viewBox="0 0 14 15" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +87,7 @@
         </h2>
         <div class="w-[376px] py-3 justify-between items-center flex">
           <span class="text-amber-950 font-['Poppins'] text-base font-normal leading-normal">Total:</span><span
-            class="text-amber-950 font-['Poppins'] text-base font-semibold leading-tight">{{ selecteditems.price }}.00</span>
+            class="text-amber-950 font-['Poppins'] text-base font-semibold leading-tight">price.00</span>
         </div>
         <div class="w-[376px] py-3 shadow-[0px_1px_0px_0px_rgba(229,229,229,1.00)] justify-between items-center flex">
           <span class="text-amber-950 font-['Poppins'] text-sm font-normal leading-[21px]">Shipping:</span><span
@@ -88,10 +95,10 @@
         </div>
         <div class="w-[376px] py-3 shadow-[0px_1px_0px_0px_rgba(229,229,229,1.00)] justify-between items-center flex">
           <span class="text-amber-950 font-['Poppins'] text-sm font-normal leading-[21px]">Subtotal:</span><span
-            class="text-amber-950 font-['Poppins'] text-sm font-medium leading-[21px]">{{ selecteditems.prize }}.00</span>
+            class="text-amber-950 font-['Poppins'] text-sm font-medium leading-[21px]">{{ selectedTableitems.price }}.00</span>
         </div>
         <button
-          class="w-[376px] text-white mt-5 px-10 py-4 bg-amber-800 hover:bg-[#c09858] rounded-[44px] gap-4 text-base font-semibold leading-tight" @click="paymentTab">
+          class="w-[376px] text-white mt-5 px-10 py-4 bg-amber-800 hover:bg-[#c09858] rounded-[44px] gap-4 text-base font-semibold leading-tight">
           Proceed to checkout
         </button>
       </div>

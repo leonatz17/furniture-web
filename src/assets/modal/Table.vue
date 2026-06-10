@@ -1,8 +1,8 @@
 <script>
-import Cart from './Cart.vue';
+import Tablecart from './Tablecart.vue';
 export default{
     components:{
-        Cart
+        Tablecart
 
     },
     data (){
@@ -94,12 +94,26 @@ export default{
                 },
             ],
             currentIndex: 0,
+            tableproducts: false,
+            tableitems: true,
         }
+        
+    },
+    methods:{
+        buyTable(index){
+            this.currentIndex = index;
+            this.tableproducts = true;
+            this.tableitems = false
+
+        },
+        addCart(table) {
+            this.$emit('addtableCart', { ...table })
+        },
     }
 }
 </script>
 <template>
-     <div  class="bg-stone-600/90">
+     <div v-if="tableitems" class="bg-stone-600/90">
         <section class="container mx-auto p-10 md:py-12 px-0 md:p-8 md:px-0">
             <div class="h-30 w-full">
             </div>
@@ -110,7 +124,7 @@ export default{
                 class="p-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10 items-start "
                 >
                 <section v-for="(tables,index) in table" :key="tables.id"
-                    class="p-5 py-10  text-center transform duration-500 hover:-translate-y-2 cursor-pointer hover:bg-stone-300">
+                    class="p-5 py-10  text-center transform duration-500 hover:-translate-y-2 cursor-pointer hover:bg-stone-300" @click="buyTable(index)">
                     <img class="w-full h-60" :src="tables.img" alt="">
                     <div class="space-x-1 flex justify-center mt-10">
                         <svg class="w-4 h-4 mx-px fill-current text-orange-600" xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +160,7 @@ export default{
                     </div>
                     <h1 class="text-xl font-bold text-amber-950 font-['Poppins'] my-3">{{ tables.name }}</h1>
 
-                    <h2 class=" text-xl font-bold text-amber-950 font-['Poppins'] my-3">{{ tables.price }}.00</h2>
+                    <h2 class=" text-xl font-bold text-amber-950 font-['Poppins'] my-3" @click="buyTable(index)">{{ tables.price }}.00</h2>
                     <button class="p-2 px-6 bg-amber-800 text-white rounded-md hover:bg-[#c09858] cursor-pointer"
                         >Add To
                         Cart</button>
@@ -154,5 +168,5 @@ export default{
             </section>
         </section>
     </div>
-    
+    <Tablecart v-if="tableproducts" :selectedTableitems="table[currentIndex]"/>
 </template>

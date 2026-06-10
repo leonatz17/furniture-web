@@ -1,33 +1,37 @@
 <script>
 import Sofa from '../assets/modal/Sofa.vue';
 import Table from '../assets/modal/Table.vue';
-export default{
-    components:{
+export default {
+    components: {
         Sofa,
         Table
     },
-    data (){
-        return{
-            sofaproduct:false,
-            Homepage : true,
+    data() {
+        return {
+            sofaproduct: false,
+            Homepage: true,
             cart: [],
             tableproducts: false,
-            
+            tablecart:[],
+
         }
     },
-    methods:{
-        sofaProduct(){
+    methods: {
+        sofaProduct() {
             this.sofaproduct = true;
             this.Homepage = false;
         },
-         handleCart(sofa) {
-      this.cart.push({ ...sofa })
-    },
-    tableProductst(){
+        handleCart(sofa) {
+            this.cart.push({ ...sofa })
+        },
+        tableProductst() {
             this.tableproducts = true;
             this.Homepage = false;
         },
-        
+         handleTableCart(table) {
+            this.tablecartcart.push({ ...table })
+        },
+
     }
 }
 </script>
@@ -38,15 +42,17 @@ export default{
         </div>
         <div class="relative w-full h-[320px]" id="home">
             <div class="absolute inset-0 opacity-70 h-100">
-                <img src="https://essentialhome.eu/room-by-room/wp-content/uploads/2024/10/MCG_0724-Living-brubeck-miles-russel-fitzgerald-metamorphosis-matheny-craig-shirley-martin-1-2-scaled.jpg" alt="Background Image"
-                    class="object-cover object-center w-full h-full" />
+                <img src="https://essentialhome.eu/room-by-room/wp-content/uploads/2024/10/MCG_0724-Living-brubeck-miles-russel-fitzgerald-metamorphosis-matheny-craig-shirley-martin-1-2-scaled.jpg"
+                    alt="Background Image" class="object-cover object-center w-full h-full" />
 
             </div>
             <div class="absolute inset-9 flex flex-col md:flex-row items-center justify-between">
                 <div class="md:w-1/2 mb-4 md:mb-0">
-                    <h1 class="text-white font-['Poppins'] font-extrabold text-5xl md:text-5xl leading-tight mb-2">Rest like
+                    <h1 class="text-white font-['Poppins'] font-extrabold text-5xl md:text-5xl leading-tight mb-2">Rest
+                        like
                         Royalty.</h1>
-                    <p class="font-regular text-xl mb-8 mt-4 text-white font-['Poppins']">Luxury Furniture, Curated for the Filipino Home
+                    <p class="font-regular text-xl mb-8 mt-4 text-white font-['Poppins']">Luxury Furniture, Curated for
+                        the Filipino Home
                     </p>
                     <a href="#contactUs"
                         class=" px-6 py-3 bg-[#c8a876] text-white font-medium rounded-full hover:bg-[#c09858]  transition duration-200">Contact
@@ -61,19 +67,22 @@ export default{
             <div class="container mx-auto px-3">
                 <h2 class="text-3xl font-bold text-[#c09858] mb-8 text-center font-['Poppins']">Our Collection</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer" @click="sofaProduct">
+                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer"
+                        @click="sofaProduct">
                         <img src="https://m.media-amazon.com/images/I/91GILvhd-rL._AC_UF894,1000_QL80_.jpg"
                             alt="wheat flour grinding" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
-                            <h3 class="text-xl font-bold text-amber-950 mb-2 font-['Poppins']" >Sofa Collection</h3>
+                            <h3 class="text-xl font-bold text-amber-950 mb-2 font-['Poppins']">Sofa Collection</h3>
 
                         </div>
                     </div>
-                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer" @click="tableProductst">
+                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer"
+                        @click="tableProductst">
                         <img src="https://cdn.thewirecutter.com/wp-content/media/2026/03/BEST-COFFEE-TABLES-SUB-02025-1.jpg?width=2048&quality=60&crop=2048:1365&auto=webp"
                             alt="Coffee" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
-                            <h3 class="text-xl font-medium text-amber-950 mb-2" @click="tableProductst">Table Collection</h3>
+                            <h3 class="text-xl font-medium text-amber-950 mb-2" @click="tableProductst">Table Collection
+                            </h3>
 
                         </div>
                     </div>
@@ -111,6 +120,6 @@ export default{
             </div>
         </section>
     </div>
-    <Sofa  v-if="sofaproduct" @addCart="handleCart"/>
-    <Table v-if="tableproducts" />
+    <Sofa v-if="sofaproduct" @addCart="handleCart" />
+    <Table v-if="tableproducts" @addtableCart="handleTableCart" />
 </template>
