@@ -1,14 +1,18 @@
 <script>
 import Sofa from '../assets/modal/Sofa.vue';
+import Table from '../assets/modal/Table.vue';
 export default{
     components:{
-        Sofa
+        Sofa,
+        Table
     },
     data (){
         return{
             sofaproduct:false,
             Homepage : true,
             cart: [],
+            tableproducts: false,
+            
         }
     },
     methods:{
@@ -19,6 +23,10 @@ export default{
          handleCart(sofa) {
       this.cart.push({ ...sofa })
     },
+    tableProductst(){
+            this.tableproducts = true;
+            this.Homepage = false;
+        },
         
     }
 }
@@ -61,11 +69,11 @@ export default{
 
                         </div>
                     </div>
-                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer">
+                    <div class=" rounded-lg shadow-md overflow-hidden hover:bg-stone-300 cursor-pointer" @click="tableProductst">
                         <img src="https://cdn.thewirecutter.com/wp-content/media/2026/03/BEST-COFFEE-TABLES-SUB-02025-1.jpg?width=2048&quality=60&crop=2048:1365&auto=webp"
                             alt="Coffee" class="w-full h-110 object-cover">
                         <div class="p-6 text-center">
-                            <h3 class="text-xl font-medium text-amber-950 mb-2">Table Collection</h3>
+                            <h3 class="text-xl font-medium text-amber-950 mb-2" @click="tableProductst">Table Collection</h3>
 
                         </div>
                     </div>
@@ -104,4 +112,5 @@ export default{
         </section>
     </div>
     <Sofa  v-if="sofaproduct" @addCart="handleCart"/>
+    <Table v-if="tableproducts" />
 </template>
