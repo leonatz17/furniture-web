@@ -34,7 +34,7 @@ export default {
     },
     contact(){
         this.contactUs = true;
-        this.Homepage = false;
+        this.Homepage = false; 
     }
         
 
