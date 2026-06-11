@@ -276,7 +276,7 @@ export default {
             
         },
         addCart(index) {
-            this.cart.push(...{selecteditems})
+            this.cart.push({...sofa})
             this.currentIndex = index
             
 
