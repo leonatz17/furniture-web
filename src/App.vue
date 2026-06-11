@@ -7,6 +7,7 @@ import Visit from './components/Visit.vue';
 import Collection from './components/Collection.vue';
 import Insidecart from './assets/modal/Insidecart.vue';
 import Sofa from './assets/modal/Sofa.vue';
+import Contact from './assets/modal/Contact.vue';
 export default {
   components: {
     Navbar,
@@ -16,7 +17,8 @@ export default {
     Visit,
     Collection,
     Insidecart,
-    Sofa
+    Sofa,
+    Contact
 
   },
   data() {
@@ -47,5 +49,6 @@ export default {
   <Collection v-if="currentpage === 'Collect'" />
   <Insidecart v-if="currentpage === 'Cart'"  :cart="cartItems" />
   <Sofa v-if="currentpage === 'Product'" />
+  <Contact v-if="currentpage === 'Contact'" />
   <Footer />
 </template>

@@ -60,7 +60,7 @@ export default {
             </div>
 
             <div class="flex justify-end">
-                <div class="flex items-center h-10 w-30 rounded-md bg-[#c8a876] text-white font-medium p-2">
+                <div class="flex items-center h-10 w-30 rounded-md bg-[#c8a876] text-white font-medium p-2" @click="navigate('Contact')">
                     <!-- Heroicon name: phone -->
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6">
