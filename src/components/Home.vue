@@ -24,8 +24,9 @@ export default {
             this.sofaproduct = true;
             this.Homepage = false;
         },
-        handleCart(product) {
-        this.$emit('addCart', product);
+        handleCart(sofa) {
+        this.$emit('addCart', {...sofa});
+        this.cart.push(sofa)
     }
         
 
@@ -123,6 +124,6 @@ export default {
             </div>
         </section>
     </div>
-    <Sofa v-if="sofaproduct" @addCart="handleCart" />
+    <Sofa v-if="sofaproduct" @addCart="handleCart" /> 
     
 </template>

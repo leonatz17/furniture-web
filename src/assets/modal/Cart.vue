@@ -24,9 +24,12 @@ export default {
       this.pay = true;
     },
     cart() {
-      this.$emit('productstocart', this.selecteditems)
+      this.$emit('addCart',this.selecteditems)
+      this.sofaItems = false;
+      this.items = true;
+
     },
-    
+
   }
 }
 </script>
@@ -53,7 +56,7 @@ export default {
           <tbody>
             <tr class="text-center">
               <td class="px-2 py-2 text-left align-top">
-                <img :src="selecteditems.img" alt="photo"
+                <img :src="selecteditems?.img" alt="photo"
                   class="w-full mr-2 inline-block h-50 object-fill object-center" /><span
                   class="text-amber-950 font-extrabold font-['Poppins'] text-2xl">{{ selecteditems.name }}</span>
               </td>
@@ -64,14 +67,14 @@ export default {
                   <path d="M2.33398 7.5H11.6673" stroke="#666666" stroke-width="1.5" stroke-linecap="round"
                     stroke-linejoin="round"></path>
                 </svg><span
-                  class="w-10 text-center text-amber-950 font-['Poppins'] text-base font-normal leading-normal">5</span><svg
+                  class="w-10 text-center text-amber-950 font-['Poppins'] text-base font-normal leading-normal">1</span><svg
                   class="cursor-pointer relative" width="14" height="15" viewBox="0 0 14 15" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M2.33398 7.49998H11.6673M7.00065 2.83331V12.1666V2.83331Z" stroke="#1A1A1A"
                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
               </td>
-              <td class="px-2 py-2 text-amber-950 font-['Poppins']">$70.00</td>
+              <td class="px-2 py-2 text-amber-950 font-['Poppins']">.00</td>
               <td class="px-2 py-2">
                 <svg width="24" class="cursor-pointer text-[#c09858]" height="25" viewBox="0 0 24 25" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -132,19 +135,7 @@ export default {
         </button>
       </div>
     </div>
-    <!-- <div
-      class="mt-6 p-5 w-[800px]  rounded-lg border border-amber-600 justify-start items-center gap-6 inline-flex hover:bg-stone-300">
-      <h3 class="text-amber-950 font-['Poppins'] w-1/4 text-xl font-medium className leading-[30px]">
-        Coupon Code
-      </h3>
-      <div class="w-full ">
-        <input placeholder="Enter code" type="text"
-          class="w-2/3 px-6 py-3.5 outline-none border border-amber-600 rounded-[46px] text-amber-950 font-['Poppins'] text-base font-normal leading-normal" /><button
-          class="px-10 py-4 bg-amber-800 font-['Poppins']  rounded-[43px] text-white text-base font-semibold leading-tight">
-          Apply Coupon
-        </button>
-      </div>
-    </div> -->
+
   </section>
 
 </template>
