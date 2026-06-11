@@ -4,14 +4,22 @@ export default{
        cart :{
             type: Array
         }
+    },
+    data (){
+        return{
+            shoppingCart: true,
+        }
     }
+
 }
 </script>
 <template>
+
     <div class="h-30 w-full">
 
     </div>
-    <div class="bg-stone-600/90 h-screen py-8 px-10">
+   
+    <div v-if="shoppingCart" class="bg-stone-600/90 h-screen py-8 px-10">
         <div  class="container mx-auto px-4">
             <h1 class="text-2xl font-semibold mb-4 font-['Poppins'] text-amber-950 ">Shopping Cart</h1>
             <div      class="flex flex-col md:flex-row gap-4">
