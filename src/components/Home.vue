@@ -33,7 +33,8 @@ export default {
         
     },
     contact(){
-        contactUs = true;
+        this.contactUs = true;
+        this.Homepage = false;
     }
         
 
