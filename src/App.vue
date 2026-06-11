@@ -6,6 +6,7 @@ import About from './components/About.vue';
 import Visit from './components/Visit.vue';
 import Collection from './components/Collection.vue';
 import Insidecart from './assets/modal/Insidecart.vue';
+import Sofa from './assets/modal/Sofa.vue';
 export default {
   components: {
     Navbar,
@@ -14,7 +15,9 @@ export default {
     About,
     Visit,
     Collection,
-    Insidecart
+    Insidecart,
+    Sofa
+
   },
   data() {
     return {
@@ -30,9 +33,7 @@ export default {
     },
     addToMasterCart(sofa) {
       this.cartItems.push({...sofa});
-      this.cartItems = [];
-      console.log(this.cartItems)
-      
+    
     }
   }
 }
@@ -45,5 +46,6 @@ export default {
   <Visit v-if="currentpage === 'Visit'" />
   <Collection v-if="currentpage === 'Collect'" />
   <Insidecart v-if="currentpage === 'Cart'"  :cart="cartItems" />
+  <Sofa v-if="currentpage === 'Product'" />
   <Footer />
 </template>

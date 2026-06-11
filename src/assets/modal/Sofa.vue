@@ -275,8 +275,9 @@ export default {
             this.sofaItems = true
             
         },
-        addCart(sofa) {
-            this.$emit('addCart')
+        addCart(index) {
+            this.cart.push(...{selecteditems})
+            this.currentIndex = index
             
 
         },
