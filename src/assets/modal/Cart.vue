@@ -41,7 +41,7 @@ export default {
       My Shopping Cart
     </h1>
     <div class="flex items-start mt-8 gap-6 ">
-      <div class="hover:bg-stone-300 border-1 border-amber-600 p-4 w-[800px] rounded-xl">
+      <div class="bg-stone-300 border-1 border-amber-600 p-4 w-[800px] rounded-xl">
         <table class="w-full  rounded-xl">
           <thead>
             <tr

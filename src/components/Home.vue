@@ -1,9 +1,11 @@
 <script>
 import Sofa from '../assets/modal/Sofa.vue';
+import Contact from '../assets/modal/Contact.vue';
 
 export default {
     components: {
         Sofa,
+        Contact
        
     },
     data() {
@@ -11,6 +13,7 @@ export default {
             sofaproduct: false,
             Homepage: true,
             cart: [],
+            contactUs:false
            
             
             
@@ -27,6 +30,10 @@ export default {
         handleCart(sofa) {
         this.$emit('addCart', {...sofa});
         this.cart.push(sofa)
+        
+    },
+    contact(){
+        contactUs = true;
     }
         
 
@@ -52,9 +59,9 @@ export default {
                     <p class="font-regular text-xl mb-8 mt-4 text-white font-['Poppins']">Luxury Furniture, Curated for
                         the Filipino Home
                     </p>
-                    <a href="#contactUs"
-                        class=" px-6 py-3 bg-[#c8a876] text-white font-medium rounded-full hover:bg-[#c09858]  transition duration-200">Contact
-                        Us</a>
+                    <h1 
+                        class=" px-6 w-fit py-3 bg-[#c8a876] text-white font-medium rounded-full hover:bg-[#c09858]  transition duration-200" @click="contact">Contact
+                        Us</h1>
                 </div>
             </div>
         </div>
@@ -125,5 +132,6 @@ export default {
         </section>
     </div>
     <Sofa v-if="sofaproduct" @addCart="handleCart" /> 
+    <Contact v-if="contactUs" />
     
 </template>

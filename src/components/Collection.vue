@@ -91,8 +91,8 @@
                         <div
                             class="absolute inset-0 bg-stone-300/50 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div class="absolute bottom-0 left-0 right-0 p-4">
-                                <h3 class="text-2xl font-bold text-white">Explore Nature</h3>
-                                <p class="text-white">Discover the beauty of the natural world</p>
+                                <h3 class="text-2xl font-bold text-white">Maximize your space with streamlined, multi-functional designs that adapt to your lifestyle."</h3>
+                                
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                         <div
                             class="absolute inset-0 bg-stone-300/50 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div class="absolute bottom-0 left-0 right-0 p-4">
-                                <h4 class="text-xl font-bold text-white">Tech Innovations</h4>
+                                <h4 class="text-xl font-bold text-white">Fun Day Out</h4>
                             </div>
                         </div>
                     </div>
@@ -148,7 +148,7 @@
                         <div
                             class="absolute inset-0 bg-stone-300/50 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div class="absolute bottom-0 left-0 right-0 p-4">
-                                <h4 class="text-xl font-bold text-white">Swimming</h4>
+                                <h4 class="text-xl font-bold text-white">Poolside Bliss</h4>
                             </div>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
                         <div
                             class="absolute inset-0 bg-stone-300/50 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div class="absolute bottom-0 left-0 right-0 p-4">
-                                <h4 class="text-xl font-bold text-white">Chess</h4>
+                                <h4 class="text-xl font-bold text-white">Sanctuary</h4>
                             </div>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                         <div
                             class="absolute inset-0 bg-stone-300/50 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div class="absolute bottom-0 left-0 right-0 p-4">
-                                <h4 class="text-xl font-bold text-white">Football</h4>
+                                <h4 class="text-xl font-bold text-white">View vibe</h4>
                             </div>
                         </div>
                     </div>
@@ -178,7 +178,7 @@
                         <div
                             class="absolute inset-0 bg-stone-300/50 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div class="absolute bottom-0 left-0 right-0 p-4">
-                                <h4 class="text-xl font-bold text-white">Cricket</h4>
+                                <h4 class="text-xl font-bold text-white">Togetherness</h4>
                             </div>
                         </div>
                     </div>
