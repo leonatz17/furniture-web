@@ -5,9 +5,9 @@ import Footer from './components/Footer.vue';
 import About from './components/About.vue';
 import Visit from './components/Visit.vue';
 import Collection from './components/Collection.vue';
-import Insidecart from './assets/modal/Insidecart.vue';
-import Sofa from './assets/modal/Sofa.vue';
-import Contact from './assets/modal/Contact.vue';
+import Insidecart from './components/Insidecart.vue';
+import Sofa from './components/Sofa.vue';
+import Contact from './components/Contact.vue';
 export default {
   components: {
     Navbar,
