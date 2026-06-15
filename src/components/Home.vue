@@ -1,12 +1,11 @@
 <script>
-import Sofa from '../assets/modal/Sofa.vue';
-import Contact from '../assets/modal/Contact.vue';
+import Sofa from './Sofa.vue';
+import Contact from './Contact.vue';
 
 export default {
     components: {
         Sofa,
         Contact
-       
     },
     data() {
         return {
