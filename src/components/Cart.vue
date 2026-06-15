@@ -5,7 +5,7 @@ export default {
 
   },
   props: {
-    selecteditem: {
+    selectedItem: {
       type: Object
     }
   },
@@ -24,7 +24,7 @@ export default {
       this.pay = true;
     },
     cart() {
-      this.$emit('addCart', this.selecteditem)
+      this.$emit('addCart', this.selectedItem)
       this.sofaItems = false;
       this.items = true;
 
@@ -56,11 +56,11 @@ export default {
           <tbody>
             <tr class="text-center">
               <td class="px-2 py-2 text-left align-top">
-                <img :src="selecteditem.img" alt="photo"
+                <img :src="selectedItem.img" alt="photo"
                   class="w-full mr-2 inline-block h-50 object-fill object-center" />
-                <span class="text-amber-950 font-extrabold font-['Poppins'] text-2xl">{{ selecteditem.name}}</span>
+                <span class="text-amber-950 font-extrabold font-['Poppins'] text-2xl">{{ selectedItem.name}}</span>
               </td>
-              <td class="px-2 py-2 text-amber-950 font-['Poppins']">{{ selecteditem.price}}.00</td>
+              <td class="px-2 py-2 text-amber-950 font-['Poppins']">{{ selectedItem.price}}.00</td>
               <td class="p-2 mt-9  rounded-[170px] border border-[#c09858] justify-around items-center flex">
                 <svg width="14" height="15" class="cursor-pointer" viewBox="0 0 14 15" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -116,7 +116,7 @@ export default {
         </h2>
         <div class="w-[376px] py-3 justify-between items-center flex">
           <span class="text-amber-950 font-['Poppins'] text-base font-normal leading-normal">Total:</span><span
-            class="text-amber-950 font-['Poppins'] text-base font-semibold leading-tight">{{ selecteditem.price
+            class="text-amber-950 font-['Poppins'] text-base font-semibold leading-tight">{{ selectedItem.price
             }}.00</span>
         </div>
         <div class="w-[376px] py-3 shadow-[0px_1px_0px_0px_rgba(229,229,229,1.00)] justify-between items-center flex">
@@ -125,7 +125,7 @@ export default {
         </div>
         <div class="w-[376px] py-3 shadow-[0px_1px_0px_0px_rgba(229,229,229,1.00)] justify-between items-center flex">
           <span class="text-amber-950 font-['Poppins'] text-sm font-normal leading-[21px]">Subtotal:</span><span
-            class="text-amber-950 font-['Poppins'] text-sm font-medium leading-[21px]">{{ selecteditem.price
+            class="text-amber-950 font-['Poppins'] text-sm font-medium leading-[21px]">{{ selectedItem.price
             }}.00</span>
         </div>
         <button
