@@ -341,5 +341,5 @@ export default {
             </section>
         </section>
     </div>
-    <Cart v-if="sofaItems" :selecteditems="sofa[currentIndex]" @returntoshop="return" @addCart="addCart"/>
+    <Cart v-if="sofaItems" :selecteditem="sofa[currentIndex]" @returntoshop="return" @addCart="addCart"/>
 </template>
