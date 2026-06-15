@@ -49,7 +49,7 @@ export default {
               <th class="text-left px-2 py-2">Product</th>
               <th class="px-2 py-2">price</th>
               <th class="px-2 py-2">Quantity</th>
-              <th class="px-2 py-2">Subtotal</th>
+              
               <th class="w-7 px-2 py-2"></th>
             </tr>
           </thead>
